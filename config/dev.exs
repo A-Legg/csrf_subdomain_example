@@ -17,7 +17,7 @@ config :csrf_subdomain_example, CsrfSubdomainExample.Repo,
 # with webpack to recompile .js and .css sources.
 config :csrf_subdomain_example, CsrfSubdomainExampleWeb.Endpoint,
   http: [port: 4000],
-  url: [host: "myapp.dev"],
+  url: [host: "myapp"],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,

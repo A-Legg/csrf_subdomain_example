@@ -25,3 +25,15 @@ After updating the Endpoint in`config/dev.exs` with `url: [host: "myapp.dev"]` a
 ```
 
 when visiting [`myapp.dev:4000`](http://myapp.dev:4000) from your browser we are unable to connect.
+
+After updating the Endpoint in`config/dev.exs` with `url: [host: "myapp"]` and `/etc/hosts` with:
+
+```
+127.0.0.1          myapp
+127.0.0.1          subdomain.myapp
+255.255.255.255    broadcasthost
+::1                myapp
+```
+
+when visiting [`myapp:4000`](http://myapp:4000) or [`subdomain.myapp:4000`](http://subdomain.myapp:4000) from your browser we are able to connect.
+
