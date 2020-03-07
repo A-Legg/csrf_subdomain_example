@@ -15,3 +15,13 @@ Current `/etc/hosts`:
 255.255.255.255    broadcasthost
 ::1                localhost
 ```
+
+After updating the Endpoint in`config/dev.exs` with `url: [host: "myapp.dev"]` and `/etc/hosts` with:
+
+```
+127.0.0.1          myapp.dev
+255.255.255.255    broadcasthost
+::1                myapp.dev
+```
+
+when visiting [`myapp.dev:4000`](http://myapp.dev:4000) from your browser we are unable to connect.
